@@ -57,3 +57,16 @@ Modified to include rolling beta calibration
 Deployed selectively in directional environments
 
 Overall seems to be generating alpha over long term
+
+# => There seem to be strong regime logic followed:
+after plotting regime shift graph of Johnasen, consistent 2-3 years change of regime was seen.
+On training for 2 years and testing on 1 much better and results were seen for mean reverting and trend following algo
+They both performed well in different periods, strongly following the regimes that appeared in the graph
+
+# Seperate project is being built to integrate them together with mixture robust regime switching method like :
+1) hidden markov model
+2) kalman filtering
+3) using trace of the Johnasens test to shift between long term mean reverting and short term trend following
+
+Results with full algorithm, reason behind this structure will be built into new project
+Returns will be regressed on factor etfs to check if model is capturing a purticular factor or a market inefficiency
